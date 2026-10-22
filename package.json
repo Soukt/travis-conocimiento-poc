@@ -1,0 +1,17 @@
+{
+  "name": "travis-conocimiento-poc",
+  "private": true,
+  "description": "Prueba desechable: conocimiento de Travis guardado en un git propio, con visor y MCP.",
+  "workspaces": [
+    "api",
+    "visor"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,visor -c blue,green \"npm --prefix api run dev\" \"npm --prefix visor run dev\"",
+    "test": "npm test -w api",
+    "validar": "npm run validar -w api"
+  },
+  "devDependencies": {
+    "concurrently": "10.0.6"
+  }
+}
