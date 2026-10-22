@@ -1,0 +1,19 @@
+# Quién aprueba los cambios de cada carpeta. Gana la regla más concreta.
+# Para publicar, cada fichero tocado necesita la aprobación de uno de sus responsables.
+# Nadie aprueba su propia propuesta.
+- ruta: "*"
+  responsables: [tecnico-1, tecnico-2]
+- ruta: agentes/postventa/AGENTE.md
+  responsables: [tecnico-1, resp-booking]
+- ruta: agentes/postventa/casos/
+  responsables: [resp-booking, booking-2]
+- ruta: agentes/postventa/casos/parques-y-entradas/
+  responsables: [resp-booking, booking-1]
+- ruta: informacion/
+  responsables: [resp-booking, booking-2]
+- ruta: plantillas/
+  responsables: [resp-booking, booking-2]
+- ruta: avisos/
+  responsables: [resp-booking, booking-2]
+- ruta: acciones/
+  responsables: [tecnico-1, tecnico-2]
